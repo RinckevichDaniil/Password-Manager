@@ -10,7 +10,7 @@ export default function Navigation() {
 	return (
 		<nav className='nav'>
 			{user ? (
-				<button onClick={logout}>Logout</button>
+				<button onClick={logout} className='logout-button'>Logout</button>
 			) : (
 				<>
 					<Link to='../login'>Have account? Please Log In</Link>
